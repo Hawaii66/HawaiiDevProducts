@@ -1,0 +1,16 @@
+text colors:
+
+text-orange-500
+text-green-600
+
+background colors:
+
+bg-blue-900
+bg-blue-600
+bg-gray-100
+
+Colors:
+
+bg-yellow-500
+bg-black
+bg-white
