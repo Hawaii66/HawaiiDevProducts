@@ -4,7 +4,9 @@ import React from "react";
 function HeadWrapper() {
   return (
     <Head>
-      <title></title>
+      <title>HawaiiDev Shop</title>
+
+      <link rel="icon" type="image/x-icon" href="/IconHawaiiDev.ico"></link>
       <meta charSet="UTF-8" />
       <meta name="description" content="HawaiiDev Shop" />
       <meta
