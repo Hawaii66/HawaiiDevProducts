@@ -9,5 +9,11 @@ module.exports = {
         extend: {},
     },
     plugins: [],
-    safelist: ["^bg-"],
+    safelist: [{
+            pattern: /^bg-/,
+        },
+        {
+            pattern: /^text-/,
+        },
+    ],
 };
