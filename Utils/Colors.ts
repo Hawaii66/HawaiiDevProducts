@@ -10,6 +10,10 @@ export const BGtoColor = (color: string) => {
       return "Blå";
     case "bg-orange-500":
       return "Orange";
+    case "bg-green-500":
+      return "Grön";
+    case "bg-purple-600":
+      return "Lila";
   }
 };
 
