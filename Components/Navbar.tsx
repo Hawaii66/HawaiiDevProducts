@@ -5,7 +5,7 @@ import React from "react";
 function Navbar() {
   const router = useRouter();
   return (
-    <div className="fixed t-0 l-0 w-full flex flex-row justify-between px-2 sm:px-10 mt-2">
+    <div className="fixed t-0 l-0 w-full flex flex-row justify-between px-2 sm:px-10 py-2 bg-gradient-to-b  from-slate-300">
       {router.pathname !== "/" ? (
         <h1 className="text-orange-500 font-bold text-3xl">HawaiiDev</h1>
       ) : (
