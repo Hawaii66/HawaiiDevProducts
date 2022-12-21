@@ -38,21 +38,26 @@ function Extra({ options, selected, setSelected, setText, text }: Props) {
           />
         );
       })}
-      {options[selected].collectText ? (
-        <input
-          value={text}
-          onChange={(e) => {
-            const verify = verifyText(e.target.value);
-            if (verify) {
-              setText(e.target.value);
-            }
-          }}
-          placeholder="Skriv här... (max 10)"
-          maxLength={10}
-          className="w-5/6 p-2 ml-5 h-10 bg-gray-100 font-mono text-gray-700"
-        />
+
+      {options[selected].collectText !== undefined ? (
+        options[selected].collectText ? (
+          <input
+            value={text}
+            onChange={(e) => {
+              const verify = verifyText(e.target.value);
+              if (verify) {
+                setText(e.target.value);
+              }
+            }}
+            placeholder="Skriv här... (max 10)"
+            maxLength={10}
+            className="w-5/6 p-2 ml-5 h-10 bg-gray-100 font-mono text-gray-700"
+          />
+        ) : (
+          <div className="h-10 p-2" />
+        )
       ) : (
-        <div className="h-10 p-2" />
+        <div />
       )}
     </div>
   );
