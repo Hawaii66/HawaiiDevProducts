@@ -15,7 +15,7 @@ function Settings({ selections, setSelections }: Props) {
 
   return (
     <Card>
-      <div>
+      <div className="self-start">
         <h1 className="p-5 text-5xl text-center text-orange-500 font-mono font-bold">
           {product.name}
         </h1>
